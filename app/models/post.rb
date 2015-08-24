@@ -1,7 +1,7 @@
 class Post < ActiveRecord::Base
-  #validates :user_id, presence: true
+  belongs_to :user
 
-  #belongs_to :user
+  validates :user_id, presence: true
 
   validates :image, presence: true
 
